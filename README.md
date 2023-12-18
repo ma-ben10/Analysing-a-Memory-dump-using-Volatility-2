@@ -17,7 +17,7 @@ This repository contains a forensics write-up for analyzing a memory dump using 
 ```bash
 brew install volatility
 ```
-#### Linux:
+### Linux:
 
 ```bash
 git clone https://github.com/volatilityfoundation/volatility.git
