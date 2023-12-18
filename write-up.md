@@ -23,5 +23,37 @@ python2 ~/volatility/vol.py -f ch2.dmp --profile=Win7SP1x86_23418 printkey -o 0x
 Now we can see all subkeys of the system registry :
 ![subkey1](screens/subkey1.png)
 
+I guess that the first key is the right choose let's run it : 
+```bash
+python2 ~/volatility/vol.py -f ch2.dmp --profile=Win7SP1x86_23418 printkey -o 0x8b21c008 -K "ControlSet001"
+```
+**output**
 
+![subkeys2](screens/subkeys2.png)
+
+ here we continue with the Control subkey using the back slash **"\"**  :
+
+ ```bash
+python2 ~/volatility/vol.py -f ch2.dmp --profile=Win7SP1x86_23418 printkey -o 0x8b21c008 -K "ControlSet001\Control"
+```
+Now, we have an extensive list of keys, resembling database tables:
+
+![subkeys3](screens/subkeys3.png)
+
+If we carefully read through this key, we'll find our target key, "ComputerName," as we are specifically searching for the workstation hostname. Let's proceed with the final step :
+
+ ```bash
+python2 ~/volatility/vol.py -f ch2.dmp --profile=Win7SP1x86_23418 printkey -o 0x8b21c008 -K "ControlSet001\Control\ComputerName"
+```
+![subkeys4](screens/subkeys4.png)
+we check the "ActiveComputerName" key : 
+
+```bash
+python2 ~/volatility/vol.py -f ch2.dmp --profile=Win7SP1x86_23418 printkey -o 0x8b21c008 -K "ControlSet001\ControlComputerName\ActiveComputerName"
+```
+**And voila, we've successfully obtained the workstation's hostname!**
+
+![subkeys5](screens/subkeys5.png)
+
+**which is: WIN-ETSA91RKCFP**
 
