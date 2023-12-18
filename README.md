@@ -10,7 +10,7 @@ This repository contains a forensics write-up for analyzing a memory dump using 
 ### Installing Volatility 2
 
 ### windows:
-.[Volatility](https://github.com/volatilityfoundation/volatility/releases/tag/2.6)
+.[installing volatility](https://github.com/volatilityfoundation/volatility/releases/tag/2.6)
 .Extract the contents of the downloaded archive.
 ### MacOs: 
 . You can run this command :
@@ -24,6 +24,6 @@ sudo apt-get install python2.7
 sudo apt-get install python-pip
 pip install -r requirements.txt
 python vol.py
-
-### for more details about Memory Forensics using volatility check this video :
-[Volatility](https://www.youtube.com/watch?v=2S_pi9qnIo8)
+```
+# for more details about Memory Forensics using volatility check this video :
+[Memory Forensics using Volatility2](https://www.youtube.com/watch?v=2S_pi9qnIo8)
