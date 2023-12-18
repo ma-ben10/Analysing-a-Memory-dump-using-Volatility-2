@@ -53,7 +53,7 @@ python2 ~/volatility/vol.py -f ch2.dmp --profile=Win7SP1x86_23418 printkey -o 0x
 ```
 **And voila, we've successfully obtained the workstation's hostname!**
 
-![subkeys5](screens/subkeys5.png)
+![hostname](screens/content.png)
 
 **which is: WIN-ETSA91RKCFP**
 
