@@ -1,4 +1,4 @@
-# Analysing-a-Memory-dump-using-Volatility-2
+# Analyzing-a-Memory-dump-using-Volatility-2
 # Forensics Challenge Write-Up
 
 This repository contains a forensics write-up for analyzing a memory dump using Volatility 2.
