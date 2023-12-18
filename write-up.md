@@ -15,5 +15,13 @@ python2 ~/volatility/vol.py -f ch2.dmp --profile=Win7SP1x86_23418 hivelist
 **Here, we obtain the registry hives:**
 
 ![hives](screens/hives.png)
+So what we will do to get the workstation's hostename from it?
+First, we use the "printkey" option to specify the key value of the registry folder like this :
+```bash
+python2 ~/volatility/vol.py -f ch2.dmp --profile=Win7SP1x86_23418 printkey -o 0x8b21c008
+```
+Now we can see all subkeys of the system registry :
+![subkey1](screens/subkey1.png)
+
 
 
