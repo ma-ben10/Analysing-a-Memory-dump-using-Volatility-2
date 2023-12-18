@@ -7,7 +7,7 @@ This repository contains a forensics write-up for analyzing a memory dump using 
 
 [Volatility](https://github.com/volatilityfoundation/volatility) is an open-source memory forensics framework that allows you to analyze memory dumps from Windows, Linux, and macOS systems. It is widely used in digital forensics and incident response to extract valuable information from volatile memory.
 
-### Installing Volatility 2
+## Installing Volatility 2
 
 ### windows:
 .[installing volatility](https://github.com/volatilityfoundation/volatility/releases/tag/2.6)
@@ -27,5 +27,5 @@ sudo apt-get install python-pip
 pip install -r requirements.txt
 python vol.py
 ```
-# for more details about Memory Forensics using volatility check this video :
+## For more details about Memory Forensics using volatility check this video :
 [Memory Forensics using Volatility2](https://www.youtube.com/watch?v=2S_pi9qnIo8)
