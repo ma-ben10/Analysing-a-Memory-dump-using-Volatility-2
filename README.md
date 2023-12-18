@@ -14,7 +14,9 @@ This repository contains a forensics write-up for analyzing a memory dump using 
 .Extract the contents of the downloaded archive.
 ### MacOs: 
 . You can run this command :
-brew install volatility 
+```bash
+brew install volatility
+```
 #### Linux:
 
 ```bash
