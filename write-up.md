@@ -1,5 +1,4 @@
-We have this 'ch2.dmp', memory file that the have size of 537 MB it's a huge RAM 
-First we will check the profile of this memory using the volatility2 for sure :
+We possess a 'ch2.dmp' memory file with a size of 537 MB, indicating substantial RAM capacity. Initially, we will confirm the profile of this memory using Volatility 2
 ```bash
 python2 ~/volatility/vol.py -f ch2.dmp imageinfo
 ```
