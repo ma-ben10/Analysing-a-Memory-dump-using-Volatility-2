@@ -20,6 +20,7 @@ First, we use the "printkey" option to specify the key value of the registry fol
 ```bash
 python2 ~/volatility/vol.py -f ch2.dmp --profile=Win7SP1x86_23418 printkey -o 0x8b21c008
 ```
+the registry that i choose is : \REGISTRY\MACHINE\SYSTEM because it contains all the configurations of the systeme  
 Now we can see all subkeys of the system registry :
 ![subkey1](screens/subkey1.png)
 
